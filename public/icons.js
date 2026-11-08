@@ -1,0 +1,26 @@
+const paths={
+dashboard:'<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
+wallet:'<path d="M20 8V5a1 1 0 0 0-1-1L5 6a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1H5"/><path d="M21 12h-5v4h5"/>',
+gold:'<path d="m3 19 2-5h6l2 5zm10 0 2-5h5l2 5zM7 12l2-6h6l2 6z"/>',
+lock:'<rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/>',
+process:'<path d="M4 8h15l-3-3m4 11H5l3 3"/><path d="M19 8l-3 3m-11 5 3-3"/>',
+truck:'<path d="M3 5h12v12H3zM15 9h3l3 4v4h-6"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/>',
+factory:'<path d="M3 20V9l6 3V8l6 3 1-8h3l2 17zM7 16h1m4 0h1m4 0h1"/>',
+assay:'<path d="M9 3h6m-5 1v7l-6 8q-1 2 2 2h12q3 0 2-2l-6-8V4M8 15h8"/>',
+sales:'<path d="M5 3h14v18l-3-2-4 2-4-2-3 2zM8 7h8M8 11h8M8 15h4"/>',
+users:'<circle cx="10" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2m0-15a3 3 0 0 1 0 6m2 3a5 5 0 0 1 4 5"/>',
+chart:'<path d="M4 3v17h17M8 16v-4m5 4V7m5 9v-7"/>',
+file:'<path d="M5 3h9l5 5v13H5zM14 3v6h5M8 13h8m-8 4h6"/>',
+history:'<path d="M3 11a9 9 0 1 1 2 7M3 5v6h6m3-4v5l3 2"/>',
+upload:'<path d="M12 16V3m-5 5 5-5 5 5M4 16v5h16v-5"/>',
+settings:'<path d="M4 7h6m4 0h6M4 17h9m4 0h3"/><circle cx="12" cy="7" r="2"/><circle cx="15" cy="17" r="2"/>',
+search:'<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/>',
+calendar:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v5m10-5v5M3 11h18"/>',
+plus:'<path d="M12 5v14M5 12h14"/>',arrow:'<path d="M5 12h14m-6-6 6 6-6 6"/>',up:'<path d="M6 18 18 6M7 6h11v11"/>',down:'<path d="m7 10 5 5 5-5"/>',right:'<path d="m9 5 7 7-7 7"/>',menu:'<path d="M3 6h18M3 12h18M3 18h18"/>',x:'<path d="m6 6 12 12M18 6 6 18"/>',
+bank:'<path d="m3 8 9-5 9 5zM5 11v6m5-6v6m4-6v6m5-6v6M3 21h18M4 18h16"/>',
+coin:'<circle cx="12" cy="12" r="9"/><path d="M15 9c-1-2-6-2-6 1 0 3 6 1 6 4s-5 3-6 1m3-9v12"/>',
+box:'<path d="m3 7 9-4 9 4v10l-9 4-9-4zM3 7l9 4 9-4m-9 4v10"/>',
+alert:'<path d="m12 3 10 17H2zM12 9v4m0 3v.3"/>',tick:'<path d="m4 12 5 5L20 6"/>',layers:'<path d="m3 7 9-4 9 4-9 4zM3 12l9 4 9-4M3 17l9 4 9-4"/>',
+bell:'<path d="M4 17h16l-2-3V9a6 6 0 0 0-12 0v5zM9 20a3 3 0 0 0 6 0"/>',clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v6l4 2"/>'};
+export function icon(name,size=19){return '<svg aria-hidden="true" width="'+size+'" height="'+size+'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">'+(paths[name]||paths.file)+'</svg>'}
+
